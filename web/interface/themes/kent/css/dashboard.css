@@ -1,0 +1,524 @@
+html {
+	background-color: #eee;
+}
+
+b.bbot {
+	clear: both;
+}
+
+#doc2 {
+	/*width: 100%;*/
+	background-color: white;
+}
+
+#bd {
+	width: 73.076em;
+	margin: 0 auto;
+}
+
+#ft {
+	width: 73.076em;
+	margin: 0 auto 25px auto;
+}
+
+#ft div{
+	width: 15em !important;
+	text-align: left;
+}
+
+
+#content{
+	width:640px;
+	float:left;
+	padding-left: 10px;
+	margin-top: 10px;
+	overflow:hidden;
+}
+
+#sidebar {
+	float: right;
+	width: 270px;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+
+#content .box,
+.side-box{	
+	margin-bottom: 20px;
+	border: 1px solid #bec5cb;
+}
+
+#content .box .bottom-row-holder,
+.side-box .bottom-row-holder{
+	overflow:hidden;
+	border-top: 1px solid #bac1c8;
+	margin-top: -1px;
+}
+
+#content .box .bottom-row,
+.side-box .bottom-row {
+	overflow: auto;
+	min-height: 16px;
+	border: 1px solid #fff;
+	padding: 3px 7px 3px 9px;
+	font-weight: bold;
+	background: #eaf4f9 url(../images/dashboard/bg-bottom-row.gif) repeat-x;
+}
+
+#content .box .bottom-row,
+.side-box .bottom-row {
+	display: block;
+	min-height: 17px;
+	width: 250px;
+   	*width: 258px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   	_width: 258px    !important; /* IE 6 */
+   	 width: 258px\0/ !important; /* IE 8-9 */
+}
+
+#content .box .bottom-row{
+	width: 620px;
+   	*width: 628px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   	_width: 628px    !important; /* IE 6 */
+   	 width: 628px\0/ !important; /* IE 8-9 */
+}
+
+	#content .box .bottom-row p,
+	.side-box .bottom-row p{
+		margin: 0;
+		color: #494a4a;
+	}
+
+	#content .box .bottom-row .more,
+	.side-box .bottom-row .more{
+		float: right;
+		color: #003461;
+	}
+
+	.bottom-row .pay{
+		display:block;
+		min-height:16px;
+		padding:0 0 0 24px;
+		font-weight:bold;
+		background:url(../images/dashboard/ico-quest.png) no-repeat;
+	}
+
+#content .box .heading,
+.side-box .heading{	
+	border-bottom:1px solid #bac1c8; 
+	background: #eaf4f9 url(../images/dashboard/bg-list-active.gif) repeat-x;
+}
+
+#content .box .heading .more{
+		float:right;
+		display:inline;
+		font-weight:bold;
+	}
+
+#content .box .items .more{
+		float:right;
+		display:inline;
+		font-weight:bold;
+		font-size: smaller;
+	}
+
+
+	#content.dashboard .box h3,
+	#sidebar .side-box h3{
+		padding:4px 7px 4px;
+		margin-bottom: 0px;
+		font-size:1.166em;
+		font-weight: bold;
+		color:#003461;
+		border:1px solid #fff;	
+	}
+
+		#content.dashboard .box h3 a,
+		#sidebar .side-box h3 a{
+			color:#003461;
+		}
+
+	#content .box h3.profile,
+	#content .box h3.history,
+	#content .box h3.searches,
+	#sidebar .side-box h3.fines,
+	#sidebar .side-box h3.reservations,
+	#sidebar .side-box h3.tags,
+	#sidebar .side-box h3.favorites,
+	#content .box h3.items {
+		padding-left: 31px;
+	}
+
+	.side-box h3.favorites{ background:url(../images/dashboard/ico-fav.png) no-repeat 6px 50%;}
+	.box h3.items{ background:url(../images/dashboard/ico-items-loan.png) no-repeat 6px 50%;}
+	.side-box h3.tags{ background:url(../images/dashboard/ico-tags.png) no-repeat 6px 50%;}
+	#sidebar .side-box h3.reservations{ background:url(../images/dashboard/ico-reservations.png) no-repeat 6px 50%;}
+	#sidebar .side-box  h3.fines{ background:url(../images/dashboard/ico-fines.png) no-repeat 6px 50%;}
+	.box h3.searches{ background: url(../images/dashboard/ico-saved.png) no-repeat 6px 50%;}
+	.box h3.history{ background:url(../images/dashboard/ico-search-history.png) no-repeat 6px 50%;}
+	.box h3.profile{ background:url(../images/dashboard/ico-profile.png) no-repeat 6px 50%;}
+	.side-box .form-6 h3{
+		color:#2f2f2f;
+		font-size:14px;
+		margin:0 0 4px;
+		padding:0;
+	}
+
+#content ul.items,
+#sidebar ul.items {
+	overflow: auto;
+	padding:0;
+}
+
+	#sidebar ul.items > li,
+	#content ul.items > li {
+		overflow: auto;
+		padding: 10px;
+	}
+
+	#content .items li.color,
+	#sidebar .items li.color {
+		border-top: #E4E8EC 1px solid;
+		border-bottom: #E4E8EC 1px solid;
+		background: #F5F9FB;
+	}
+
+	#content .items li.color{
+		float: left;
+	}
+
+	#sidebar .items li.color,
+	#sidebar .items li {
+   		*float: left    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_float: left    !important; /* IE 6 */
+   		 float: left\0/ !important; /* IE 8-9 */
+   		*width: 255px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_width: 255px    !important; /* IE 6 */
+   		 width: 255px\0/ !important; /* IE 8-9 */
+   		*padding: 10px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding: 10px    !important; /* IE 6 */
+   		 padding: 10px\0/ !important; /* IE 8-9 */
+   		*padding-left: 12px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding-left: 12px    !important; /* IE 6 */
+   		 padding-left: 12px\0/ !important; /* IE 8-9 */
+   		*padding-right: 5px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding-right: 5px    !important; /* IE 6 */
+   		 padding-right: 5px\0/ !important; /* IE 8-9 */
+	}
+
+	#content ul.items li .format,
+	#sidebar ul.items li .format {
+		float: left;
+	}
+
+	#sidebar ul.items li .content,
+	#content ul.items li .content {
+		float: left;
+		padding: 0 0 0 10px;
+		width: 600px;
+		border: 0px;
+		position: relative;
+	}
+
+
+	#content ul.items li .content {
+   		*width: 613px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_width: 613px    !important; /* IE 6 */
+   		 width: 613px\0/ !important; /* IE 8-9 */
+	}
+
+	#sidebar ul.items li .content {
+		width: 216px;
+	}
+
+	#content ul.items li .date {
+		position: absolute;
+		bottom: 0px;
+		right: 10px;
+		font-style: normal;    
+		/*font-size: 1.2em;*/
+
+   		*bottom: 8px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_bottom: 8px    !important; /* IE 6 */
+   		 bottom: 8px\0/ !important; /* IE 8-9 */
+	}
+
+		#content ul.items li .date strong {
+			font-weight: bold;
+		}
+	#content ul.items li .action-list {
+		margin-top: 10px;
+   		*margin-top: 0px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_margin-top: 0px   !important; /* IE 6 */
+   		 margin-top: 0px\0/ !important; /* IE 8-9 */
+	}
+	
+	.box-holder {
+		padding:12px 10px;
+	
+	}
+
+	#content ul.items li .action-list li {
+			float: left;
+			padding: 2px 0;
+			margin-right: 20px;
+		}
+
+	#content ul.items li .action-list li.status{
+		/*font-size: 1.2em;*/
+		background: url(../images/dashboard/alarm-clock-blue.png) no-repeat left;
+		padding: 2px 0 2px 20px;
+	}
+	#content ul.items li .action-list li a.renew{
+		background: url(../images/dashboard/ico-renew2.png) no-repeat left;
+		padding-left: 20px;	
+	}
+
+	#content .items .action-list .status strong {
+		font-weight: bold;
+		color: #1A7522;
+	}
+
+	#content .items li.special,
+	#sidebar .items li.special {
+		border: 2px solid;
+		margin: 1px 1px 1px;
+		/* float: none; */
+		float: left;
+		padding: 10px;
+
+	}
+
+	#content .items li.clearfix,
+	#content .items li.special{
+		width: 612px;
+   		*width: 624px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_width: 624px    !important; /* IE 6 */
+   		 width: 624px\0/ !important; /* IE 8-9 */
+	}
+
+	#content .items li{
+   		*padding: 10px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding: 10px    !important; /* IE 6 */
+   		 padding: 10px\0/ !important; /* IE 8-9 */
+  		*padding-left: 10px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding-left: 10px    !important; /* IE 6 */
+   		 padding-left: 10px\0/ !important; /* IE 8-9 */
+	}
+
+	#content .items li .action-list li{
+  		*padding-left: 20px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding-left: 20px    !important; /* IE 6 */
+   		 padding-left: 20px\0/ !important; /* IE 8-9 */
+	}
+
+
+	#sidebar .items li.special {
+   		*width: 256px    !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_width: 256px    !important; /* IE 6 */
+   		 width: 256px\0/ !important; /* IE 8-9 */
+   		*padding-right: 1px !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_padding-right: 1px    !important; /* IE 6 */
+   		 padding-right: 1px\0/ !important; /* IE 8-9 */
+	}
+
+	#content .items li.special.last,
+	#sidebar .items li.special.last {
+		margin: 1px 1px 2px;
+	}
+	#content .items li.special .content {
+		width: 593px;
+	}
+
+	#content .items li.special.red,
+	#content .items .special.red,
+	#content .items .special.red.color {
+		border-color: #C14949;
+		background: #FAF1F1 url(../images/dashboard/bg-block-error.gif) repeat-x;
+	}
+
+	#content .items .special.red .action-list .status,
+	#content .items .special.red .date strong {
+		color: #9E2F2F;
+	}
+
+	#content .items li.special.yellow,
+	#content .items .special.yellow,
+	#content .items .special.yellow.color {
+		border-color: #E2BE40;
+		background: rgb(250, 244, 234) url(../images/dashboard/bg-block-warning.gif) repeat-x;
+	}
+
+	#content .items .special.yellow .action-list .status strong {
+		color: #B27616;
+	}
+	#content .items .special.red .action-list .status,
+	#content .items .special.yellow .action-list .status {
+		background: url(../images/dashboard/alarm-clock.png) no-repeat;
+   		*background: url(../images/dashboard/alarm-clock-blue.png) no-repeat left;
+ !important; /* IE 7 (IE6 also uses this, so put it first) */
+   		_background: url(../images/dashboard/alarm-clock-blue.png) no-repeat left;
+   !important; /* IE 6 */
+   		 background: url(../images/dashboard/alarm-clock-blue.png) no-repeat left;
+\0/ !important; /* IE 8-9 */
+	}
+
+
+/*	#sidebar .items li.special .content {
+		width: 254px;
+	}*/
+
+	#sidebar .items li.special.green,
+	#sidebar .items .special.green,
+	#sidebar .items .special.green.color {
+		background: #FBFDFB url(../images/dashboard/bg-block-avail.gif) repeat-x;
+		border-color: #4E9449;
+	}
+
+	#sidebar .items span.available,
+	#sidebar .items span.unavailable {
+		/*font-size: 1.2em;*/
+		padding: 2px 0 1px 20px;
+		margin-top: 5px;
+		margin-bottom: 0;
+		display: block;
+	}
+
+	#sidebar .items span.available {
+		background: url(../images/dashboard/ico-available.png) no-repeat;
+	}
+
+	#sidebar .items span.unavailable {
+		background: url(../images/dashboard/ico-unavailable-2.png) no-repeat;	
+	}
+
+	#sidebar .items span.available strong {
+		font-weight: bold;
+		color: #12600C;
+
+	}
+
+	#content .row-holder .row {
+		padding: 15px 10px;
+		margin-top: 0px;
+		
+	}
+
+	#content .row-holder .row.color {
+		background-color: #F5F9FB;
+		border-top: #E4E8EC 1px solid;
+		border-bottom: #E4E8EC 1px solid;
+	}
+
+	#content .row-holder .row .type {
+		font-size: 1em;
+		margin-bottom: 3px;
+		display: block;
+	}
+
+	#content .row-holder .row .result {
+		padding: 0px;
+		border: 0px;
+	}
+
+	#content .row-holder .row .action {
+		float: right;
+		padding-top: 10px;
+	}
+
+	#content .row-holder .row .action li {
+		display: inline;
+		top: 20px;
+		margin-left: 20px;
+	}
+
+	#content .row-holder .row .action li a {
+		padding: .5em .5em .5em 22px;
+	}	
+
+	.rerun {
+		background: url(../images/dashboard/bg-return.png) no-repeat left;
+	}
+
+	.save1 {
+		background: url(../images/dashboard/ico-save1.png) no-repeat left;
+	}
+
+.search-page .side-box{padding:0 0 10px;}
+
+
+#content .profile-list {
+	padding: 20px;
+}
+
+	#content .profile-list li {
+		overflow: auto;
+		padding: 10px;
+		border-bottom: #E4E8EC 1px solid;
+	}
+
+		#content .profile-list li .name {
+			display: block;
+			float: left;
+			width: 115px;
+			color: #6f6f6f;
+		}
+
+		#content .profile-list li .value {
+			display: block;
+			float: right;
+			width: 460px;
+		}
+
+.price-holder{
+		padding:12px 10px;
+	}
+	
+	.price-holder strong.fines{font-size:1.3em;}
+	.price-holder strong.price{
+		font-size:4em;
+		display:block;
+		text-align:right;
+	}
+
+
+
+
+* html .bottom-row .pay{
+	height:16px;
+}
+
+#content .box .holder,
+.side-box .holder{
+	padding:0 0 16px;
+	background:url(../images/dashboard/bg-side-box-bottom.gif) no-repeat 0 100%;
+}
+.side-box .tags-list,
+.side-box .favorites-list{
+	padding: 5px 10px;
+	/*padding:7px 0 7px 15px;*/
+	/*overflow:hidden;*/
+	/*height:1%;*/
+}
+.side-box .tags-list li,
+.side-box .favorites-list li{
+	padding: 5px 0;
+/*	width:100%;
+	float:left;*/
+	font-size:1.166em;
+}
+.side-box .tags-list li{
+	display: inline-block;
+	white-space:nowrap;
+	margin-right: 10px;
+}
+.side-box .tags-list a,
+.side-box .favorites-list a{font-weight:bold;}
+.side-box .tags-list .number,
+.side-box .favorites-list .number{
+	color:#494a4a;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
